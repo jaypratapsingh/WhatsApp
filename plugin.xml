@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jp.plugin.whatsapp"
+    version="1.0.0">
+    <name>WhatsApp</name>
+    <description>Open and Send Message on WhatsApp</description>
+    <license>Apache 2.0</license>
+    <keywords>whatsapp,send message on whatsapp</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/whatsapp.js" name="WhatsApp">
+        <clobbers target="whatsapp" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WhatsApp" >
+                <param name="android-package" value="com.jp.plugin.whatsapp.WhatsApp"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/jp/plugin/whatsapp/WhatsApp.java" target-dir="src/com/jp/plugin/whatsapp" />
+    </platform>
+</plugin>
