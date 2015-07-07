@@ -9,7 +9,7 @@ var whatsapp = {
 						console.log("WhatsApp is not found in your device");
 					}
 				},
-				"WhatsApp_plugin",
+				"WhatsApp",
 				"WhatsApp_method_called",
 		message);
     }
